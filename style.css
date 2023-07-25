@@ -6,7 +6,8 @@ header{
 }
 #logo{
     position: relative;
-    width: 5%; 
+    width: 20%; 
+    height:auto;
 }
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,900');
 
