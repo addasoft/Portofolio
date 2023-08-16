@@ -18,7 +18,7 @@ body {
 
 .backgroundContainer {
 	background:#ffffff;
-	min-height: 50vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -137,14 +137,15 @@ body {
 
 .myName {
 	font-family: 'Playfair Display', serif;
-	font-size: 5em;
+	font-size: 6em;
 	letter-spacing: 2px;
 	font-weight: 900;
 	color: white;
 	line-height: .9em;
-	position: absolute;
+	position:absolute;
 	z-index: 5;
 	text-shadow: .7px 3px 15px rgba(41, 24, 15, 0.9);
+  text-align: center;
 }
 
 #myBtn {
@@ -255,7 +256,7 @@ transform:scale(0.2) translateY(-100px);
 
   justify-content: center;
   align-content: center;
-  padding: 20px;
+  padding: 50px;
   } 
   
   .firstBanner{
@@ -270,7 +271,7 @@ transform:scale(0.2) translateY(-100px);
   .grid-item{
     font-family: 'Montserrat', sans-serif;
     
-    width: 100%;
+    width: 200%;
     color:white;
     
   }
@@ -282,7 +283,7 @@ transform:scale(0.2) translateY(-100px);
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-   padding: 5%;
+   padding: 21%;
    font-size: 23px;
     
     
@@ -328,7 +329,7 @@ transform:scale(0.2) translateY(-100px);
 
 .watermark__body {
     /* Text color */
-    color: rgba(255, 255, 255, 0.4);;
+    color: rgba(255, 255, 255, 0.4);
 
     /* Text styles */
     font-size: 5rem;
@@ -342,7 +343,7 @@ transform:scale(0.2) translateY(-100px);
 }
 .watermark2__body {
   /* Text color */
-  color: rgba(0, 0, 0, 0.4);;
+  color: rgba(0, 0, 0, 0.4);
 
   /* Text styles */
   font-size: 5rem;
@@ -365,3 +366,14 @@ transform:scale(0.2) translateY(-100px);
   width:13px;
   padding:0;
 }
+ .slideshowTitle{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.575);
+  font-weight: bold;
+  font-size: 3rem;
+ }
+ .fa-solid:hover{
+  color: rgba(255, 251, 0, 0.753) !important;
+  }

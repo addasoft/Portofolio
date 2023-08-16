@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/51ea8e3d7d.js" crossorigin="anonymous"></script>
 
         <script src="theScript.js"></script>    
         <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -53,6 +54,8 @@
                 </div>
                 <div class="myName">
                     <h1>Hi!<br>I'm Adriana Bugaru</h1>
+                    <a href="https://www.linkedin.com/in/adriana-bugaru-57761620a/"><i class="fa-brands fa-linkedin fa-2xs"></i></a>
+                    <a href="https://github.com/adrianabugaru"><i class="fa-brands fa-github fa-2xs"></i></a>
                 </div>
             </div>
             <main>
@@ -113,20 +116,25 @@
 
         <!-- First Row -->
         <div class="grid-item" >           
-            <div class="slideshowTitle">Slideshow</div>
+            <div class="slideshowTitle">My Projects</div>
 
             <div class="w3-content w3-display-container" style="max-width:800px">
                 <img alt="1" class="mySlides" src="./Images/ab3.png" style="width:100%">
                 <img alt="2" class="mySlides" src="./Images/licensed-image.jpeg" style="width:100%">
                 <!-- <img alt="3" class="mySlides" src="img_mountains_wide.jpg" style="width:100%"> -->
                 <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="width:100%">
-                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-                  <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(1)"></span>
-                  <span class="w3-badge demo w3-border w3-transparent w3-hover-black" onclick="currentDiv(2)"></span>
+                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><i class="fa-solid fa-arrow-left fa-2xl" style="color: #ffffff;"></i></div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #ffffff;"></i></div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow" onclick="currentDiv(2)"></span>
                   <!-- <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span> -->
                 </div>
               </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                  showDivs(1); // Call the function after the DOM is ready
+                });
+              </script>
         </div>
 
             
