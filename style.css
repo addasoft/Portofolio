@@ -136,7 +136,7 @@ body {
 }
 
 .myName {
-	font-family: 'Playfair Display', serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 6em;
 	letter-spacing: 2px;
 	font-weight: 900;
@@ -149,6 +149,7 @@ body {
 }
 
 #myBtn {
+  font-family: 'Montserrat', sans-serif;
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -181,8 +182,7 @@ body {
     z-index:2;
     color:#86774f;
     text-decoration:none;
-    font-family:'Black Ops One', 'Righteous', Arial, sans-serif;
-    font-family: 'Righteous', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform:uppercase;    
     -webkit-transition:0.3s ease-in-out;
     transition:0.3s ease-in-out;
@@ -206,22 +206,7 @@ body {
     transform:scale(0.2);
     opacity:0;
   }
-  .nav-7 .linktext:after{
-    position:absolute;
-    content:'';
-    width:0px;
-    height:0px;
-    top:25px;
-    left:calc(50% - 20px);
-    border-left:20px solid transparent;
-    border-right:20px solid transparent;
-    border-top: 20px solid #978148;       
-    -webkit-transform:scale(0.2) translateY(-100px);
-transform:scale(0.2) translateY(-100px);
-    opacity:0;    
-    -webkit-transition:0.3s ease-in-out;
-    transition:0.3s ease-in-out;
-  }
+ 
   .nav-7 .item{
     position:relative;
     display:inline-block;
@@ -235,7 +220,7 @@ transform:scale(0.2) translateY(-100px);
     transition:0.3s ease-in-out;
     z-index:2;
     text-decoration:none;
-    font-family:Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform:uppercase;
   }
   .nav-7 .item:hover .linktext{
@@ -377,3 +362,58 @@ transform:scale(0.2) translateY(-100px);
  .fa-solid:hover{
   color: rgba(255, 251, 0, 0.753) !important;
   }
+
+  footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+  .skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);

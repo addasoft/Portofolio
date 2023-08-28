@@ -24,19 +24,19 @@
                     <nav>
                         <a class="item" href="#nav-7">
                              <img id="logo" href="index.html" src="./Images/ab3.png" alt="logo">
-                        </a>                       
-                        <a class="item" href="#nav-7">
-                        <div class="linktext">Home</div>
-                        </a>
-                        <a class="item" href="#nav-7">
+                        </a>                   
+                        <a class="item" href="#firstBanner">
                         <div class="linktext">About me</div>
                         </a>
-                        <a class="item" href="#nav-7">
+                        <a class="item" href="#secondBanner">
+                            <div class="linktext">Skills</div>
+                            </a>
+                        <a class="item" href="#thirdBanner">
                         <div class="linktext">Projects</div>
                         </a>
-                        <a class="item" href="#nav-7">
+                        <button class="item" onclick="on()">
                         <div class="linktext">Contact</div>
-                        </a>
+                        </button>
                         
                     </nav>
                     </section>
@@ -62,7 +62,7 @@
             
   </header> 
   <!--First banner-->
-<div class="firstBanner">
+<div class="firstBanner" id="firstBanner">
     <div class="grid-container">
 
         <!-- First Row -->
@@ -85,33 +85,87 @@
 </div>
 
 <!--Second banner-->
-<div class="secondBanner">
+<div class="secondBanner" id="secondBanner">
     <div class="grid-container">
 
-        
-            <div class="grid-item watermark">
+        <div class="grid-item" >  
+            <div class="watermark">
                 <div class="watermark__inner">
                     <div class="watermark2__body "><p>Skills</p></div>        
                 </div>
             </div>
 
             <!-- First Row -->
-        <div class="grid-item" >           
-            <div class="introDiv">
-                <div id="hello">
-                    <p>Hi!</p>
+                 
+            <section class="skills" id="skills">
+                         
+                <div class="skills-wrapper">
+                  <div class="first-set animate__animated animate__pulse">
+                    <img
+                    class="icon icon-card"
+                      src="https://img.icons8.com/color/240/html-5--v1.png"
+                      alt="HTML"
+                      loading="lazy"
+                      
+                    />
+                    <img
+                      src="https://img.icons8.com/color/240/css3.png"
+                      alt="CSS"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/240/javascript--v1.png"
+                      alt="JavaScript"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/240/bootstrap.png"
+                      alt="Bootstrap"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+
+                  </div>
+          
+                  <div class="second-set animate__animated animate__pulse">
+                    
+                    <img
+                      src="https://img.icons8.com/color/240/c-sharp-logo-2.png"
+                      alt="C#"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="Images/dotnet.svg"
+                      alt="DotNet"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="https://img.icons8.com/color/240/git.png"
+                      alt="Git"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                    <img
+                      src="https://img.icons8.com/fluency/144/c-plus-plus-logo.png"
+                      alt="cplusplus"
+                      loading="lazy"
+                      class="icon icon-card"
+                    />
+                  </div>
                 </div>
-                <div id="mainMessage">
-                    <p>I'm a graduate with a Bachelor's Degree in Computer Science...</p>
-                </div>
-            </div>
+              </section>
+          
         </div>
     </div>
 </div>
 
 
   <!--Third banner-->
-  <div class="thirdBanner">
+  <div class="thirdBanner" id="thirdBanner">
     <div class="grid-container">
 
         <!-- First Row -->
@@ -141,6 +195,15 @@
     </div>
 </div>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        </main>             
+        </main>    
+        <footer>
+            <p class="copy">&copy; Copyright 2023</p>
+            <p class="copy">
+              Built with &#x2661; by
+              <a rel="noopener" href="https://www.instagram.com/adrianabugaru/" target="_blank"
+                >Adriana Bugaru</a
+              >
+            </p>
+      </footer>         
     </body>
 </html>
