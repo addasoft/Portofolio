@@ -463,10 +463,11 @@ column-gap: 40px;
       font-weight: bold;
       font-size: 3rem;
     }
+   
     form input, form textarea{
       border: 0;
-      margin: 10px 0;
-      padding: 20px 350px 20px 10px;
+      margin: 10px 0;padding: 20px;
+      /* padding: 20px 100px 40px 10px; */
       outline: none;
       background: #c9b88528;
       font-size: 16px;

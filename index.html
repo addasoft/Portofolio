@@ -269,15 +269,15 @@
           <form onsubmit="sendEmail(); reset(); return false;">
             <h3>Contact me</h3>
             <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <textarea id="message" rows="4" placeholder="Your message"></textarea>
+            <!-- <input type="email" id="email" placeholder="Email" required> -->
+            <textarea id="message" rows="10" cols="40" placeholder="Your message"></textarea>
             <button type="submit">Send message</button>
           </form>
           </div>
 
           <div class="grid-item contactDetails" >  
 
-            <p>Or contact me here:<br/>                            
+            <p>Or contact me using:<br/>                            
             <center>Email:</center><br/>   <b>abugaru@gmail.com</b><br/> <br/>
             <center>Phone:</center> <br/> <center><b>+40773814407</b></center></p>
             </div>
@@ -298,16 +298,16 @@
       <script>
         function sendEmail() {
   Email.send({
-    Host: "smtp.elasticmail.com",
+    Host: "smtp.elasticemail.com",
     Username: "adrianabugaru17@gmail.com",
-    Password: "007C20C9A59C93B0788962BC70D2D301DFE0",
+    Password: "007C20C9A59C93B0788962BC70D2D301DFE0",    
+    From: 'adrianabugaru17@gmail.com',
     To: 'abugaru@gmail.com',
-    From: document.getElementById("email").value,
     Subject: "New email from your portfolio",
-    Body: "And this is the body"
+    Body: document.getElementById("message").value
     
   }).then(
-    message => alert(message)
+    message => alert('Your message has been sent successfully!')
   );
 }
 
