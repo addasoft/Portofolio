@@ -241,7 +241,7 @@ body {
  .grid-container {
   display: flex;
   grid-template-columns: 1fr;
-
+column-gap: 40px;
   justify-content: center;
   align-content: center;
   padding: 50px;
@@ -255,6 +255,13 @@ body {
   }
   .thirdBanner{
     background-color: #ddc58a;
+  }
+  .fourthBanner{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .grid-item{
     font-family: 'Montserrat', sans-serif;
@@ -400,28 +407,7 @@ body {
     padding: 20px;
     margin: 10px;
   }
-  #overlay {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  #text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);}
+
 
     .codingTitle{
       color: rgba(0, 0, 0, 0.4);
@@ -451,5 +437,70 @@ body {
       font-size: 25px;
       font-weight: bold;
       align-items: center;
+      justify-content: center;
+    }
+
+    form{
+      background: rgba(255, 255, 255, 0.49);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.4px);
+      -webkit-backdrop-filter: blur(4.4px);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      display: flex;
+      flex-direction: column;
+      padding: 80px;
+      width: 100%;
+      max-width: 200%;
+      font-family: 'Montserrat', sans-serif;
+      /* border-radius: 10px; */
+    }
+    form h3{
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.363);
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    form input, form textarea{
+      border: 0;
+      margin: 10px 0;
+      padding: 20px 350px 20px 10px;
+      outline: none;
+      background: #c9b88528;
+      font-size: 16px;
+      border-radius: 12px;
+    }
+    form button{
+      padding: 15px;
+      background-color: #86774f;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      border: 0;
+      border-radius: 40px;
+      outline: none;
+      cursor: pointer;
+      width: 200px;
+      margin: 20px auto 0;
+    }
+    .contactDetails{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      background: rgba(255, 255, 255, 0.49);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(4.4px);
+      -webkit-backdrop-filter: blur(4.4px);
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      
+      padding: 90px;
+      
+    }
+
+    .contactDetails p{
+      margin-top: 70px;
+      align-items: center;   
       justify-content: center;
     }

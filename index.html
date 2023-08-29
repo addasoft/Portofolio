@@ -34,7 +34,7 @@
                         <a class="item" href="#thirdBanner">
                         <div class="linktext">Projects</div>
                         </a>
-                        <a class="item" >
+                        <a class="item" href="#fourthBanner">
                         <div class="linktext">Contact</div>
                         </a>
                         
@@ -259,16 +259,59 @@
             
     </div>
 </div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- Fourth banner -->
+<div class="fourthBanner" id="fourthBanner">
+  <div class="grid-container">
+
+      <!-- First Row -->
+      <div class="grid-item" >           
+          <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact me</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" rows="4" placeholder="Your message"></textarea>
+            <button type="submit">Send message</button>
+          </form>
+          </div>
+
+          <div class="grid-item contactDetails" >  
+
+            <p>Or contact me here:<br/>                            
+            <center>Email:</center><br/>   <b>abugaru@gmail.com</b><br/> <br/>
+            <center>Phone:</center> <br/> <center><b>+40773814407</b></center></p>
+            </div>
+  </div>
+</div>
+    
         </main>    
         <footer>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
             <p class="copy">&copy; Copyright 2023</p>
             <p class="copy">
               Built with &#x2661; by
               <a rel="noopener" href="https://www.instagram.com/adrianabugaru/" target="_blank"
-                >Adriana Bugaru</a
-              >
+                >Adriana Bugaru</a>
             </p>
-      </footer>         
+      </footer>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>  
+      <script>
+        function sendEmail() {
+  Email.send({
+    Host: "smtp.elasticmail.com",
+    Username: "adrianabugaru17@gmail.com",
+    Password: "007C20C9A59C93B0788962BC70D2D301DFE0",
+    To: 'abugaru@gmail.com',
+    From: document.getElementById("email").value,
+    Subject: "New email from your portfolio",
+    Body: "And this is the body"
+    
+  }).then(
+    message => alert(message)
+  );
+}
+
+      </script>
+           
     </body>
 </html>

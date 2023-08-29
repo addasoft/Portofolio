@@ -64,10 +64,16 @@ function showDivs(n) {
 showDivs(1);
 
 
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
-
-function off() {
-  document.getElementById("overlay").style.display = "none";
+function sendEmail(){
+      Email.send({
+        Host : "smtp.gmail.com",
+        Username : "adrianabugaru17@gmail.com",
+        Password : "17051999Adriana",
+        To : 'abugaru@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New email from your portofolio",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 }
