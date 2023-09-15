@@ -324,6 +324,17 @@
 }
 
       </script>
+      <script>
+        // Increment the visit count stored in local storage
+        if (localStorage.pageVisits) {
+            localStorage.pageVisits = Number(localStorage.pageVisits) + 1;
+        } else {
+            localStorage.pageVisits = 1;
+        }
+
+        // Log the visit count to the console
+        console.log(`Total Page Visits: ${localStorage.pageVisits}`);
+    </script>
            
     </body>
 </html>
